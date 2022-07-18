@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Tarjeta Interactiva</title>
+</head>
+<body>
+    <!--Card-->
+    <div class="card" style="width: 18rem;">
+        <img src="./assets/img/fender-stratocaster.jpg" class="card-img-top" alt="Guitarra Fender">
+        <div class="card-body">
+          <h4 class="card-title">Guitarra Fender Stratocaster</h4>
+          <input id="cantidad" type="number" placeholder="Cantidad">
+          <input id= "color" type="text" placeholder="Color">
+          <p>Precio: $<span id="prize">250000</span></p>
+          <button class="btn btn-primary"
+          onclick="
+            cantidad = document.querySelector('#cantidad');
+            preciounitario = document.querySelector('#prize');
+            precioTotal = document.querySelector('#preciototal');
+            precioTotal.innerHTML = Number(cantidad.value) * Number(preciounitario.innerHTML)
+
+            cantidadTotal = document.querySelector('#cantidadtotal');
+            cantidadTotal.innerHTML = Number(cantidad.value);
+
+            colorChoice = document.querySelector('.circle');
+            colorChoice.style.backgroundColor = color.value; 
+
+          ">Calcular Total</button>
+        </div>
+      </div>
+    <!--Info Interactuada-->
+    <div class="results">
+        <h3>Total: $<span id="preciototal">0</span></h3>
+        <h3>Cantidad: <span id="cantidadtotal">0</span></h3>
+        <div class="variable-color">
+            <h3>Color:</h3><div class="circle"></div>
+        </div>
+        
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

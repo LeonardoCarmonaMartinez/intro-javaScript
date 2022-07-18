@@ -1,0 +1,15 @@
+body {
+    display: flex;
+}
+
+.variable-color {
+    display: flex;   
+}
+
+.circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+    margin-left: 0.5em;
+}
