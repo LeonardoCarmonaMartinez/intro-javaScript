@@ -1,5 +1,33 @@
 body {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding-right: 1em;
+    margin-top: 2em;
+    background-color: rgba(71, 160, 12, 0.836);
+    text-align: center;
+    color: white;
+}
+
+.card img {
+    height: 280px;
+    width: 100px;
+    margin-top: 1em;
+    margin-left: 35%;
+    
+}
+
+
+button {
+    background-color: orange;
+
+}
+
+.results {
+    padding-left: 1em;
 }
 
 .variable-color {
